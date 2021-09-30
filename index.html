@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Oscar's Film Zoeker</title>
+    <script defer type="text/javascript" src="movies.js"></script>
+    <script defer type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <header>
+    <div class="title">
+        <h1>Film Zoekerrr</h1>
+    </div>
+
+    <div id="search-bar">
+      <label for="site-search">Find Movie:</label>
+      <input type="text" id="site-search" name="q"
+       aria-label="Search through site content">
+
+      <button id="search-button">Search</button><br><br>
+    </div>
+
+    <nav id="radio-nav">
+       
+        <div>      
+        <input type="radio" id="default" name="movie-filter-tool" value="default" checked="checked">
+        <label for="default">All Movies</label>
+        </div>
+
+        <div>
+        <input type="radio" id="new-movies" name="movie-filter-tool" value="new">
+        <label for="new-movies">New</label>
+        </div>
+
+        <div>
+        <input type="radio" id="avengers-movies" name="movie-filter-tool" value="avengers">
+        <label for="avengers-movies">Avengers</label>
+        </div>
+
+        <div>
+        <input type="radio" id="xmen-movies" name="movie-filter-tool" value="xmen">
+        <label for="xmen-movies">X-Men</label>
+        </div>
+
+        <div>
+        <input type="radio" id="princess-movies" name="movie-filter-tool" value="princess">
+        <label for="princess-movies">Princess</label>
+        </div>
+
+        <div>
+        <input type="radio" id="batman-movies" name="movie-filter-tool" value="batman">
+        <label for="batman-movies">Batman</label>
+        </div>
+    </nav>
+  </header>
+
+  <body>
+        <div id="grid">
+            <ul id="film-grid">
+            </ul>
+        </div>
+  </body>
+
+</html>
